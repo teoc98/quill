@@ -66,6 +66,7 @@
   circuit-padding: .4em,
   ..children
 ) = { 
+  set math.equation(numbering: none)
   if children.pos().len() == 0 { return }
   if children.named().len() > 0 { 
     panic("Unexpected named argument '" + children.named().keys().at(0) + "' for quantum-circuit()")
